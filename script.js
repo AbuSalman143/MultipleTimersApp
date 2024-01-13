@@ -50,7 +50,7 @@ function create_Element(hh,mm,ss){
                             <span>:</span>
                             <div class="op-ss">${ss}</div>
                         </div>
-                        <div class="delet"><button onclick="deleteTimer(this)">Delete</button></div>`
+                        <button onclick="deleteTimer(this)">Delete</button>`
 
     timerlist.appendChild(display); 
     numberOfActiveTimers++; 
@@ -90,6 +90,7 @@ function runtimer(total_time,display){
 }
 
 function deleteTimer(button){
+    
     audio.pause();
     let current_display=button.parentNode;
     current_display.remove();
