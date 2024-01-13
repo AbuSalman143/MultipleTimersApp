@@ -1,145 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+
+}
+
 
 body{
-    background-color: #1d1d23;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    background-color: black;
+}
+
+body h1{
     color: white;
-    font-family: Roboto;
-  }
-  main, section{
+    padding: 10px;
+    font-size: 24px;
+}
+
+.container{
+    background-color: #34344A;
+    margin-top: 10px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    border-radius: 15px;
+    
+}
+.lable{
+    font-size: 12px;
+}
+
+.form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 2px solid red; */
+    width: 100%;
+    font-size: 24px; 
+    font-weight: 500;
+    color: white;
+}
+
+.time input{
+    width: 50px;
+    padding: 5px 1px;
+    text-align: center;
+    text-decoration: underline;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 24px; 
+    font-weight: 500;
+
+}
+
+input::placeholder {
+    color: white;
+    
+}
+
+.set-btn button{
+    background-color: #F0F758;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 10px;
+}
+
+.crntText{
+    background-color:#39393E ;
+    /* border: 2px solid red; */
+    padding: 5px 50px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    border-radius:10px ;
+    color: white;
+}
+.timerlist{
+    width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  #active-timers-container{
-    display: grid;
-    gap: 20px;
-  }
-  
-  h3{
-    font-family: Roboto;
-    font-style: normal;
-  }
-  .timer-card {
-    background-color: #34344a;
-    padding: 20px 30px;
-    width: 450px;
-    border-radius: 5px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 30px;
-  }
-  
-  
-  /* changing the styles of input elements */
-  input[type="number"] {
-    background-color: transparent;
-    color: white;
-    font-size: 24px;
-    width: 45px;
-    height: 24px;
-    border: none;
-    text-decoration-line: underline;
-    margin: 0px 10px;
-  }
-  input[type="number"]:focus {
-    outline: none;
-  }
-  input[type="number"]::placeholder {
-    color: white;
-  }
-  input::-webkit-outer-spin-button,
-  input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-  }
-  /* set button style */
-  #set-btn,
-  .btn {
-    background-color: rgba(255, 255, 0, 0.9);
-    padding: 7px 25px;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-  }
-  /* Current timer divider */
-  #current-timers {
-    background-color: #34344a;
-    padding: 10px 50px;
-    border-radius: 10px;
-  }
-  /* Time up css */
-  .time-up {
-    background-color: #ebeb07;
-    color: #34344a;
-    font-weight: 600;
-  }
-  .time-up > span:nth-child(2){
-      font-size: 25px;
-  }
-  .delete-btn {
-    background-color: #34344a;
-    color: #ebeb07;
-    font-weight: 600;
-  }
-  /* main timer css */
-  .timer-card {
-    background-color: #34344a;
-    padding: 20px 30px;
-    width: 450px;
-    border-radius: 5px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 30px;
-  }
-  /* changing the styles of input elements */
-  input[type="number"] {
-    background-color: transparent;
-    color: white;
-    font-size: 24px;
-    width: 45px;
-    height: 24px;
-    border: none;
-    text-decoration-line: underline;
-    margin: 0px 10px;
-  }
-  input[type="number"]:focus {
-    outline: none;
-  }
-  input[type="number"]::placeholder {
-    color: white;
-  }
-  input::-webkit-outer-spin-button,
-  input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-  }
+    /* border: 2px solid red; */
+    
+}
 
-  #set-btn,
-  .btn {
-    background-color: #f0f757;
-    padding: 7px 25px;
+.timerlist p{
+    color: white;
+    margin-top: 10px;
+}
+
+.output-container{
+    color: white;
+    /* border: 2px solid red; */
+    width: 100%;
+    background-color: #34344A;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px ;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    
+}
+
+.op-time{
+    display: flex;
+    /* border: 2px solid; */
+    width: 35%;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 500;
+    
+}
+.op-time div{
+    padding: 5px;
+}
+
+.delet button{
+    border: none;
+    padding: 5px 10px;
+    background-color: #F0F758;
+    border-radius: 10px;
+}
+
+.time-up{
+    
+    background-color: #F0F758;
+    color: #34344A;
+    padding: 10px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.time-up button{
+    padding: 5px 15px;
     border: none;
     border-radius: 10px;
-    cursor: pointer;
-  }
-  /* Current timer divider */
-  #current-timers {
-    background-color: #39393e;
-    padding: 10px 50px;
-    border-radius: 10px;
-  }
-  /* Time up card css */
-  .time-up {
-    background-color: #ebeb07;
-    color: #34344a;
-    font-weight: 600;
-  }
-  .time-up > span:nth-child(2){
-      font-size: 25px;
-  }
-  .delete-btn {
-    background-color: #34344a;
-    color: #ebeb07;
-    font-weight: 600;
-  }
+    background-color: #34344A;
+    color: white;
+}
